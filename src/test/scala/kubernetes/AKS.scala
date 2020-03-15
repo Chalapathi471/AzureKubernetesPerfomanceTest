@@ -52,8 +52,8 @@ class AKS extends Simulation{
     scn.inject(
       nothingFor(5 seconds),
       //rampUsers(userCount) during (rampDuration seconds))
-      constantUsersPerSec(userCount) during(rampDuration seconds)
-      //rampUsersPerSec(100) to(userCount) during(rampDuration)
+      //constantUsersPerSec(userCount) during(rampDuration seconds)
+      rampUsersPerSec(50) to(userCount) during(rampDuration)
     )).protocols(httpProtocol)
     .maxDuration(testDuration seconds)
     .assertions(

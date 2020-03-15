@@ -9,7 +9,7 @@ class AKS extends Simulation{
 
   def hostName: String = getProperty("HOST_NAME", "http://localhost:8090/").toString
 
-  def userCount: Int = getProperty("USERS", "10").toInt
+  def userCount: Int = getProperty("USERS", "100").toInt
 
   def rampDuration: Int = getProperty("RAMP_DURATION", "10").toInt
 

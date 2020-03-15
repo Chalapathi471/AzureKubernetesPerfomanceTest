@@ -1,0 +1,12 @@
+.gradle/
+.idea/
+build/
+caches/
+daemon/
+native/
+notifications/
+wrapper/
+
+**/.DS_Store
+AzureKubernetesPerfomanceTest.iml
+target/
